@@ -1,0 +1,99 @@
+<?php
+
+namespace $CLASS_NAMESPACE$;
+use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Database\Eloquent\Model;
+
+interface $INTERFACE$
+{
+    /**
+     * Get All Models
+     * @param array $columns
+     * @param array $relations
+     * @return Collection
+     */
+
+     public function all( array $columns = ['*'] , array $relations = []) : Collection;
+
+    /**
+     * Get all trashed Models
+     * @return Collection
+     */
+    public function allTrashed() : Collection;
+
+     /**
+     * Find model by id
+     * @param int $id
+     * @param array $columns
+     * @param array $relations
+     * @param array $appends
+     * @return Model
+     */
+
+    public function find(int $id, array $columns = ['*'] , array $relations = [] , array $appends = []) : ?Model;
+
+    /**
+     * Find trashed model by id
+     * @param int $id
+     * @return Model
+     */
+
+    public function findTrashedById(int $id) : ?Model;
+
+    /**
+     * Find Only trashed model by id
+     * @param int $id
+     * @return Model
+     */
+
+    public function findOnlyTrashedById(int $id) : ?Model;
+
+    /**
+     * Create a  model
+     * @param array $payload
+     * @return Model
+     */
+
+    public function create(array $payload) : ?Model;
+
+    /**
+     * Update existing model
+     * @param int $id
+     * @param array $payload
+     * @return bool
+     */
+
+    public function update(int $id, array $payload) : bool;
+
+    /**
+     * Delete by  model id
+     * @param int $id
+     * @return bool
+     */
+
+    public function delete(int $id) : bool;
+
+    /**
+     * Delete by Multiple model id
+     * @param array $id
+     * @return bool
+     */
+
+    public function deleteByIds(array $id) : bool;
+
+    /**
+     * Restore by model id
+     * @param int $id
+     * @return bool
+     */
+
+    public function restoreById(int $id) : bool;
+
+    /**
+     * Permanent delete by model id
+     * @param int $id
+     * @return bool
+     */
+
+    public function permanentlyDeleteById(int $id) : bool;
+}

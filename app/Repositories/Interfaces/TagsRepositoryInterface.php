@@ -1,0 +1,24 @@
+<?php
+
+namespace App\Repositories\Interfaces;
+
+interface TagsRepositoryInterface
+{
+    public function all();
+
+    public function get($where);
+
+    public function paginate($page);
+
+    public function store($input);
+
+    public function find($id);
+
+    public function update($id, $input);
+
+    public function destroy($id);
+
+    public function forceDelete($id);
+
+    public function recover($id);
+}

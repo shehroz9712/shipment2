@@ -1,0 +1,137 @@
+body {
+    background-color: var(--main-dark);
+    color: rgb(0, 0, 0);
+    font-family: 'Gilroy-Regular', sans-serif !important;
+}
+
+:root {
+    --color-1: #D431A7;
+    --color-2: #3063F7;
+    --color-3: #F87609;
+    --color-4: #952AEA;
+    --color-5: #00AEEF;
+    --color-6: #302BF7;
+    --main-dark: #0F0F2E;
+    --gradian: linear-gradient(90deg, #F87609 5.52%, #D431A7 22.81%, #952AEA 35.78%, #302BF7 59.56%, #00AEEF 76.14%);
+    --radius: 15px;
+
+}
+
+.br-30 {
+    border-radius: 30px !important;
+}
+
+.purple-color {
+    color: var(--color-4) !important;
+
+}
+
+.card-header {
+    background: #3e92ff;
+    border-radius: var(--radius) !important;
+
+    border-bottom-right-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+}
+
+.card {
+    border: 0;
+
+    border-radius: var(--radius) !important;
+
+}
+
+.font-weight-900 {
+    font-weight: 900
+}
+
+.fs-1rem {
+    font-size: 1.5rem !important;
+
+}
+
+.sidebar .nav:not(.sub-menu)>.nav-item:hover>.nav-link.not-hover {
+    background-color: var(--main-dark);
+    cursor: default;
+}
+
+.dark-bg {
+    background: var(--main-dark) !important;
+
+}
+
+.navbar .navbar-brand-wrapper {
+
+    width: calc(288px + 0.5rem);
+}
+
+.navbar .navbar-menu-wrapper {
+    background: #fff;
+    transition: width 0.25s ease;
+    -webkit-transition: width 0.25s ease;
+    -moz-transition: width 0.25s ease;
+    -ms-transition: width 0.25s ease;
+    color: #001737;
+    padding-left: 1.812rem;
+    padding-right: 1.812rem;
+    width: calc(100% - 288px - 0.5rem);
+    height: 4.625rem;
+}
+
+.sidebar {
+    border-radius: var(--radius);
+    background-color: var(--main-dark);
+    width: 300px;
+
+}
+
+.sidebar .nav:not(.sub-menu)>.nav-item:hover>.nav-link,
+.sidebar .nav .nav-item.active>.nav-link {
+    background-color: var(--color-4);
+    border-radius: var(--radius);
+    color: var(--white) !important;
+
+
+
+}
+
+.sidebar .nav .nav-item .nav-link,
+.sidebar .nav .nav-item.active>.nav-link i,
+.sidebar .nav .nav-item.active>.nav-link .menu-title,
+.sidebar .nav .nav-item.active>.nav-link .menu-arrow {
+    color: var(--white);
+}
+
+img.circle {
+    border-radius: 50px;
+    width: 50px;
+}
+
+.navbar .navbar-brand-wrapper .navbar-brand-inner-wrapper .navbar-brand img {
+    width: 99%;
+    height: auto;
+}
+
+.navbar {
+
+    border-bottom: 4px solid #3b8bc6;
+}
+
+.theme-button {
+    background: var(--color-4) !important;
+    border-radius: 30px;
+    color: white !important;
+    padding: 12px 24px;
+    text-transform: uppercase;
+}
+
+.theme-button:hover,
+.theme-button:focus {
+    background-color: var(--main-dark) !important;
+    outline: none;
+}
+
+.theme-button:active {
+    background-color: var(--main-dark) !important;
+    box-shadow: inset 2px 2px 8px var(--color-1), inset -2px -2px 8px var(--color-6);
+}

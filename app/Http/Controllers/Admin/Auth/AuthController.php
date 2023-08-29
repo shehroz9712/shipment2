@@ -26,10 +26,10 @@ class AuthController extends Controller
 
         if (Auth::attempt($credentials)) {
             // Authentication success, redirect to home or any desired page.
-            return redirect()->route('admin.home');
+            return redirect()->route('home');
         } else {
             // Authentication failed, redirect back with error message.
-            return back()->withErrors(['email' => 'Invalid credentials']);
+        return back()->withErrors(['email' => 'Invalid credentials']);
         }
     }
 

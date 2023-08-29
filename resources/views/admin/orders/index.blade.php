@@ -1,31 +1,37 @@
 @extends('admin.layouts.app')
 
 @section('content')
-    <div class="container">
+    <div class="container-fluid">
         <div class="row justify-content-center">
             <div class="col-md-12">
-                <h2>Shipping Data</h2>
-                <table class="table table-bordered data-table">
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Full Name</th>
-                            <th>Email</th>
-                            <th>Shipment Address</th>
-                            <th>Contact</th>
-                            <th>Tracking ID</th>
-                            <th>Rate Charges</th>
-                            <th>Created At</th>
-                            <th>Updated At</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
 
-                </table>
+                <div class="card">
+                    <div class="card-header">Shipment Data</div>
+
+                    <div class="card-body">
+                        <a href="{{ route('users.create') }}" class="btn btn-primary mb-4" style="float: right;">Create Shipment</a>
+                        <table class="table table-responsive data-table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Full Name</th>
+                                    <th>Email</th>
+                                    <th>Shipment Address</th>
+                                    <th>Contact</th>
+                                    <th>Tracking ID</th>
+                                    <th>Rate Charges</th>
+                                    <th>Created At</th>
+                                    <th>Updated At</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+
+                        </table>
+                    </div>
+
+                </div>
             </div>
-
         </div>
-    </div>
     </div>
 @section('js')
     <script>

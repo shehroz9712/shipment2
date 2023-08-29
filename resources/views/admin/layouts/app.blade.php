@@ -9,7 +9,7 @@
         @include('admin.layouts.partials.header')
         <div class="container-fluid page-body-wrapper">
             @include('admin.layouts.partials.sidebar')
-            <div class="main-panel">
+            <div class="m-auto main-panel">
                 @include('admin.layouts.partials.errors')
                 @yield('content')
                 @include('admin.layouts.partials.footer')

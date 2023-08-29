@@ -16,7 +16,7 @@ class UserController extends Controller
             return DataTables::of($orders)
                 ->addIndexColumn()
                 ->addColumn('action', function ($row) {
-                    $btn = '<a href="' . route('users.show', ['user' => $row->id]) . '" class="edit btn btn-primary btn-sm">View</a>';
+                    $btn = '<a href="' . route('users.show', ['user' => $row->id]) . '" class="edit btn btn-primary btn-sm mr-3">View</a>';
                     $btn2 = '<a href="' . route('users.edit', ['user' => $row->id]) . '" class="edit btn btn-primary btn-sm">Edit</a>';
                     return $btn . $btn2;
                 })

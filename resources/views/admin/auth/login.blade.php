@@ -7,7 +7,7 @@
             <div class="col-lg-4 mx-auto">
                 <div class="auth-form-light br-30 px-4 px-sm-5 py-5 text-left">
                     <div class="brand-logo">
-                        <img src="{{ frontImage('logo-gradian.png') }}" alt="logo">
+                        <img src="{{ frontImage('logo.png') }}" alt="logo">
                     </div>
                     <h4 class="text-black">Hello! let's get started</h4>
                     <h6 class="text-black font-weight-light">Sign in to continue.</h6>
